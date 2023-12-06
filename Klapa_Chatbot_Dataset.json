@@ -1,0 +1,366 @@
+{
+    "intents":[
+       {
+          "tag": "sapaan",
+          "patterns": [
+             "Hai",
+             "Selamat pagi",
+             "Selamat siang",
+             "Selamat malam",
+             "Apa kabar?",
+             "Apa yang bisa saya bantu?",
+             "Saya ingin bertanya",
+             "Halo",
+             "Hei"
+          ],
+          "responses": [
+             "Hai! Selamat datang di toko online kami.",
+             "Selamat datang! Apa yang bisa kami bantu?",
+             "Halo! Ada yang bisa kami bantu?",
+             "Baik, ada yang bisa kami bantu?",
+             "Hei! Selamat berbelanja."
+          ],
+          "context_set": ""
+       },
+       {
+          "tag": "perpisahan",
+          "patterns": [
+             "Sampai jumpa",
+             "Selamat tinggal",
+             "Terima kasih",
+             "Sampai jumpa lagi",
+             "Goodbye",
+             "Bye",
+             "Sampai bertemu lagi",
+             "Terima kasih sudah menjawab.",
+             "Selamat tinggal, semoga harimu menyenangkan",
+             "Bye bye",
+             "Sampai jumpa nanti"
+          ],
+          "responses": [
+             "Sampai jumpa! Jangan ragu untuk kembali.",
+             "Terima kasih sudah berbelanja di toko kami. Sampai jumpa!",
+             "Selamat tinggal! Jangan ragu untuk datang kembali.",
+             "Sampai jumpa nanti! Terima kasih sudah berbelanja."
+          ],
+          "context_set": ""
+       },
+       {
+         "tag": "pencipta",
+         "patterns": [
+             "siapa nama developermu",
+             "siapa nama penciptamu",
+             "siapa nama pengembangmu",
+             "siapa nama pencipta",
+             "siapa yang menciptakanmu",
+             "pengembangmu",
+             "penciptamu",
+             "siapa pengembangmu",
+             "developer",
+             "kamu dibuat oleh siapa",
+             "siapa yang membuatmu",
+             "creators",
+             "siapa yang membuatmu",
+             "siapa yang merancangmu"
+         ],
+         "responses": [
+             "Siapa hayoo",
+             "Tim Bangkit"
+         ],
+         "context_set": ""
+      },
+      {
+          "tag": "nama",
+          "patterns": [
+             "nama",
+             "siapa nama kamu",
+             "apakah kamu punya nama?",
+             "bagaimana kamu dipanggil?",
+             "apa nama kamu?",
+             "apa seharusnya saya panggil kamu?",
+             "apa nama kamu?",
+             "apa kamu?",
+             "siapa kamu?",
+             "siapa ini?",
+             "siapa yang saya ajak bicara",
+             "kamu siapa?",
+             "siapa saya bicara"
+         ],
+          "responses": [
+             "Anda bisa memanggil saya Pembaca Pikiran!",
+             "Saya Pembaca Pikiran",
+             "Saya adalah Chatbot.",
+             "Saya adalah seseorang yang ingin membantu Anda"
+         ],
+          "context_set": ""
+      },
+       {
+          "tag": "produk",
+          "patterns": [
+             "Apa produk terbaru?",
+             "Apa yang sedang diskon?",
+             "Produk terpopuler",
+             "Ada rekomendasi produk?",
+             "Saya mencari produk tertentu",
+             "Produk kategori apa yang ada?",
+             "Ada produk baru?",
+             "Apakah ada promo khusus?",
+             "Saya butuh bantuan memilih produk",
+             "Produk terlaris saat ini"
+          ],
+          "responses": [
+             "Produk yang tersedia semua berbahan dasar Kelapa.",
+             "Kami memiliki beberapa produk mulai dari bibit, batang, daun, dan buah Kelapa.",
+             "Produk sedang diskon hari ini: [daftar produk diskon].",
+             "Produk terpopuler saat ini: [daftar produk terpopuler].",
+             "Rekomendasi produk untuk Anda: [daftar rekomendasi].",
+             "Tentu, berikan saya lebih banyak detail tentang produk yang Anda cari."
+          ],
+          "context_set": ""
+       },
+       {
+          "tag": "layanan",
+          "patterns": [
+             "Apa produk terbaru?",
+             "Apa yang sedang diskon?",
+             "Produk terpopuler",
+             "Produk terlaris saat ini"
+         ],
+         "responses": [
+             "Produk yang tersedia semua berbahan dasar Kelapa.",
+             "Kami memiliki beberapa produk mulai dari bibit, batang, daun, dan buah Kelapa.",
+             "Produk sedang diskon hari ini: [daftar produk diskon].",
+             "Produk terpopuler saat ini: [daftar produk terpopuler].",
+             "Rekomendasi produk untuk Anda: [daftar rekomendasi].",
+             "Tentu, berikan saya lebih banyak detail tentang produk yang Anda cari."
+         ],
+         "context_set": ""
+      },
+       {
+          "tag": "pemesanan",
+          "patterns": [
+             "Bagaimana cara melakukan pemesanan?",
+             "Saya ingin memesan produk",
+             "Cara beli barang",
+             "Saya ingin melakukan order",
+             "Langkah-langkah pemesanan",
+             "Bagaimana cara checkout?",
+             "Proses pemesanan",
+             "Cara konfirmasi pesanan",
+             "Bagaimana cara memesan produk?",
+             "Saya ingin mengatur pemesanan saya"
+         ],
+          "responses": [
+             "Proses pemesanan sangat mudah! Pilih produk yang ingin Anda beli, tambahkan ke keranjang, dan ikuti langkah-langkah checkout. Setelah itu, pesanan Anda akan segera diproses.",
+             "Untuk memesan produk, silakan kunjungi halaman produk, pilih produk yang diinginkan, tambahkan ke keranjang, dan lanjutkan ke halaman checkout untuk menyelesaikan pemesanan Anda.",
+             "Anda bisa melakukan pemesanan dengan mengunjungi halaman produk, memilih produk yang diinginkan, dan menyelesaikan pembelian melalui halaman checkout.",
+             "Untuk memesan produk, tambahkan produk yang diinginkan ke keranjang belanja Anda. Setelah itu, klik tombol checkout untuk menyelesaikan pemesanan.",
+             "Langkah-langkah pemesanan melibatkan pemilihan produk, penambahan ke keranjang, dan pembayaran melalui halaman checkout. Pastikan untuk mengisi informasi pengiriman dengan benar.",
+             "Proses pemesanan dimulai dengan memilih produk yang diinginkan, menambahkannya ke keranjang, dan melanjutkan ke halaman checkout untuk memasukkan detail pengiriman dan pembayaran.",
+             "Setelah memilih produk dan menambahkannya ke keranjang, langkah selanjutnya adalah mengklik tombol checkout. Anda akan diarahkan ke halaman untuk memasukkan informasi pengiriman dan pembayaran.",
+             "Anda bisa mengonfirmasi pesanan Anda melalui email yang kami kirimkan setelah Anda menyelesaikan pembayaran. Informasi pengiriman juga akan terlampir dalam email konfirmasi.",
+             "Cara memesan produk adalah dengan memilih produk, menambahkannya ke keranjang, dan melanjutkan ke halaman checkout untuk memasukkan rincian pembayaran dan alamat pengiriman.",
+             "Jika Anda memiliki pertanyaan atau perlu mengatur pemesanan, hubungi layanan pelanggan kami untuk bantuan lebih lanjut."
+         ],
+          "context_set": ""
+       },
+       {
+          "tag": "keranjang",
+          "patterns": [
+             "Bagaimana cara melihat keranjang belanja saya?",
+             "Apa yang ada di dalam keranjang saya?",
+             "Saya ingin melihat barang di keranjang",
+             "Bagaimana cara menambahkan produk ke keranjang?",
+             "Saya ingin menghapus item dari keranjang",
+             "Cara mengatur keranjang belanja",
+             "Apakah barang di keranjang akan disimpan?",
+             "Bagaimana cara checkout dari keranjang?",
+             "Saya ingin mengecek produk di keranjang belanja saya"
+         ],
+          "responses": [
+             "Anda dapat melihat keranjang belanja Anda dengan mengklik ikon keranjang di bagian atas halaman. Di sana, Anda bisa melihat dan mengatur produk yang ada di keranjang.",
+             "Untuk melihat isi keranjang belanja, klik ikon keranjang di pojok kanan atas. Di halaman keranjang, Anda bisa melihat produk yang sudah ditambahkan.",
+             "Anda bisa melihat barang di keranjang dengan mengklik ikon keranjang di bagian atas halaman. Semua produk yang telah Anda tambahkan akan terdaftar di sana.",
+             "Untuk menambahkan produk ke keranjang, kunjungi halaman produk, pilih produk yang diinginkan, dan klik tombol 'Tambahkan ke Keranjang'.",
+             "Jika Anda ingin menghapus item dari keranjang, pergi ke halaman keranjang belanja dan klik tombol hapus di samping produk yang ingin dihapus.",
+             "Anda dapat mengatur keranjang belanja Anda di halaman keranjang. Di sana, Anda bisa mengubah jumlah produk, menghapus item, atau melanjutkan ke halaman checkout.",
+             "Barang di keranjang akan disimpan, namun ketersediaannya tidak dijamin hingga Anda menyelesaikan proses checkout.",
+             "Untuk checkout dari keranjang belanja, klik tombol 'Checkout' di halaman keranjang. Ikuti langkah-langkah checkout untuk menyelesaikan pemesanan Anda.",
+             "Jika Anda ingin mengecek produk di keranjang belanja, klik ikon keranjang di bagian atas halaman. Semua produk yang telah Anda tambahkan akan ditampilkan di sana."
+         ],
+          "context_set": ""
+      },
+       {
+          "tag": "harga produk",
+          "patterns": [
+             "Berapa harga produk ini?",
+             "Saya ingin tahu harga produk",
+             "Harga produk",
+             "Apa ada harga promo?",
+             "Apa harga terbaik yang bisa Anda berikan?",
+             "Apakah ada potongan harga khusus?"
+          ],
+          "responses": [
+             "Harga produk bisa dilihat di halaman produk yang anda inginkan. Harga sesuai dengan yang tertera di halaman produk tersebut. Jika ada potongan khusus, harga promo akan ditampilkan secara otomatis."
+          ],
+          "context_set": ""
+       },
+       {
+          "tag": "total harga",
+          "patterns": [
+             "Berapa total tagihan saya?",
+             "Berapa total harga barang yang saya pesan?",
+             "Berapa total harga produk?",
+             "Saya ingin tahu total pembayaran"
+         ],
+          "responses": [
+            "Total tagihan anda bisa dilihat di menu pesanan saya.",
+            "Total harga bisa dilihat di halaman checkout. Harga yang tertera sudah termasuk harga produk, pengiriman, dan biaya lainnya."
+         ],
+          "context_set": ""
+       },
+       {
+          "tag": "pembayaran",
+          "patterns": [
+             "Bagaimana cara pembayaran?",
+             "Metode pembayaran apa yang tersedia?",
+             "Bisakah saya bayar dengan kartu kredit?",
+             "Apakah ada cicilan?",
+             "Apakah saya bisa nyicil?",
+             "Sistem pembayaran apa yang digunakan?",
+             "Bagaimana cara pembayaran online?",
+             "Apa saja opsi pembayaran?",
+             "Bagaimana cara mengonfirmasi pembayaran?",
+             "Bisakah saya bayar saat barang sampai?"
+          ],
+          "responses": [
+             "Kami menerima pembayaran melalui kartu kredit, transfer bank, dan metode pembayaran online lainnya.",
+             "Maaf, kami tidak menyediakan cicilan untuk pembayaran dengan kartu kredit tertentu.",
+             "Cicilan tidak tersedia untuk semua jenis pembayaran.",
+             "Anda bisa membayar menggunakan kartu kredit Visa, MasterCard, atau menggunakan transfer bank.",
+             "Kami menggunakan sistem pembayaran online yang aman dan terpercaya. Anda dapat memilih opsi pembayaran saat checkout."
+          ],
+          "context_set": ""
+       },
+       {
+          "tag": "pengiriman",
+          "patterns": [
+             "Berapa biaya pengiriman?",
+             "Ada opsi pengiriman express?",
+             "Bagaimana cara melacak pengiriman?",
+             "Berapa lama barang akan sampai?",
+             "Pengiriman internasional tersedia?",
+             "Ada gratis ongkir?",
+             "Bagaimana jika barang rusak saat pengiriman?",
+             "Apakah bisa ambil sendiri di toko?",
+             "Bagaimana cara retur barang?"
+          ],
+          "responses": [
+             "Biaya pengiriman tergantung lokasi pengiriman. Anda dapat melihat estimasi biaya saat checkout.",
+             "Ya, kami menyediakan opsi pengiriman express dengan biaya tambahan tertentu.",
+             "Setelah barang dikirim, Anda akan menerima nomor pelacakan untuk melacak status pengiriman.",
+             "Estimasi waktu pengiriman biasanya sekitar 1-5 hari untuk pengiriman nasional dan 3-15 hari untuk pengiriman internasional. Estimasi waktu ini sesuai dengan jenis pengiriman yang anda pilih!",
+             "Ya, kami menyediakan pengiriman internasional dengan biaya tambahan tertentu.",
+             "Ada gratis ongkir untuk pembelian di atas Rp. 50.000.",
+             "Jika barang rusak saat pengiriman, silakan hubungi layanan pelanggan kami untuk penggantian atau pengembalian dana.",
+             "Anda dapat memilih opsi 'ambil sendiri di toko' saat checkout.",
+             "Prosedur retur barang dapat dilihat di halaman kebijakan retur kami."
+          ],
+          "context_set": ""
+       },
+       {
+          "tag": "promo",
+          "patterns": [
+             "Ada promo spesial hari ini?",
+             "Bagaimana cara mendapatkan diskon?",
+             "Apakah ada kode promo?",
+             "Berapa lama promo ini berlaku?",
+             "Bagaimana cara ikut promo?",
+             "Apakah ada voucher diskon?",
+             "Apa saja promo yang berlangsung?",
+             "Bagaimana cara mendapatkan penawaran khusus?",
+             "Apakah ada diskon untuk pelanggan setia?"
+          ],
+          "responses": [
+             "Ada beberapa cara untuk mendapatkan diskon. Salah satunya adalah dengan mengikuti program loyalitas kami. Anda juga bisa memeriksa halaman promo untuk penawaran terbaru.",
+             "Untuk ikut promo, Anda dapat melakukan pembelian sesuai syarat dan ketentuan yang berlaku. Pastikan untuk membaca detail promo di halaman promo kami.",
+             "Kami menyediakan voucher diskon untuk pelanggan setia kami. Anda bisa melihatnya di akun Anda atau langsung di halaman promo.",
+             "Berbagai promo menarik sedang berlangsung! Silakan kunjungi halaman promo kami untuk mendapatkan informasi lebih lanjut.",
+             "Anda bisa mendapatkan penawaran khusus dengan mendaftar newsletter kami. Kami juga seringkali mengirimkan kode promo melalui email kepada pelanggan setia.",
+             "Ya, pelanggan setia kami berhak mendapatkan diskon tambahan. Pastikan untuk selalu menggunakan akun Anda saat berbelanja."
+             ],
+          "context_set": ""
+        },
+        {
+         "tag": "pengembalian",
+         "patterns": [
+            "Bagaimana cara mengembalikan barang?",
+            "Saya ingin melakukan pengembalian",
+            "Proses pengembalian",
+            "Cara mengajukan retur",
+            "Apa kebijakan pengembalian Anda?",
+            "Bagaimana jika barang yang saya terima rusak?",
+            "Saya ingin mengembalikan produk",
+            "Apakah bisa mendapatkan pengembalian dana?",
+            "Bagaimana langkah-langkah retur?",
+            "Saya ingin mengajukan klaim pengembalian"
+         ],
+         "responses": [
+            "Anda dapat mengembalikan barang dengan menghubungi layanan pelanggan kami dan mengikuti prosedur pengembalian yang diberikan. Pastikan untuk membaca kebijakan pengembalian kami di situs web.",
+            "Proses pengembalian dimulai dengan menghubungi tim layanan pelanggan kami. Silakan berikan informasi detail tentang pesanan Anda, dan kami akan membantu Anda dengan langkah-langkah selanjutnya.",
+            "Untuk mengajukan retur, silakan hubungi tim dukungan pelanggan kami. Kami akan memberikan petunjuk lebih lanjut mengenai proses pengembalian dan penggantian.",
+            "Cara mengajukan retur adalah dengan menghubungi tim layanan pelanggan melalui email atau telepon. Pastikan untuk menyertakan nomor pesanan dan alasan pengembalian Anda.",
+            "Kebijakan pengembalian kami memungkinkan Anda untuk mengembalikan produk dalam jangka waktu tertentu setelah pembelian. Pastikan untuk membaca syarat dan ketentuan yang berlaku.",
+            "Jika Anda menerima barang yang rusak, segera hubungi tim dukungan pelanggan kami dan berikan foto barang yang rusak. Kami akan membantu mengatur pengembalian atau penggantian.",
+            "Anda bisa mengembalikan produk yang tidak memenuhi ekspektasi Anda. Silakan hubungi layanan pelanggan kami untuk informasi lebih lanjut tentang proses retur.",
+            "Pengembalian dana tersedia sesuai dengan kebijakan kami. Pastikan untuk memberikan informasi yang diperlukan saat menghubungi layanan pelanggan.",
+            "Langkah-langkah retur melibatkan menghubungi tim dukungan pelanggan, memberikan detail pesanan, dan mengikuti petunjuk pengembalian yang diberikan.",
+            "Jika Anda memiliki klaim pengembalian, segera hubungi layanan pelanggan dan berikan rincian lengkap tentang masalah yang dihadapi. Kami akan membantu Anda dengan proses pengembalian."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "random",
+         "patterns": [
+            "Aku cinta padamu",
+            "Apa kisi-kisi masuk surga?",
+            "Pintu neraka didorong atau ditarik?",
+            "This is cogil",
+            "Akankah kamu ingin menikah denganku?",
+            "Apakah kamu mencintaiku?"
+         ],
+         "responses": [
+            "Saya tidak diprogram untuk ini, tolong ajukan pertanyaan yang sesuai."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "bahasa kotor",
+         "patterns": [
+            "anjing",
+            "bangsat",
+            "tolol",
+            "memek",
+            "goblok",
+            "bodoh",
+            "ngentot",
+            "kontol",
+            "fuck",
+            "bitch",
+            "shut up",
+            "hell",
+            "stupid",
+            "idiot",
+            "dumb ass",
+            "asshole",
+            "motherfucker"
+         ],
+         "responses": [
+            "Harap gunakan bahasa yang sopan.",
+            "Saya hanya menjawab pertanyaan yang sopan.",
+            "Tolong gunakan bahasa yang baik."
+         ],
+         "context_set": ""
+      }
+        ]}
+         
