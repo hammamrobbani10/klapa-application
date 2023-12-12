@@ -84,5 +84,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/messageTextView"
         tools:alpha="100" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/title1"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
