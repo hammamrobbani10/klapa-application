@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Klapa</string>
+    <string name="signup">SIGN UP</string>
+    <string name="login">SIGN IN</string>
+    <string name="message_welcome_page">Silahkan Memilih!</string>
+    <string name="title_welcome_page">Welcome!</string>
+    <string name="title_signup_page"> Sign Up</string>
+    <string name="message_login_page">Masukkan dulu datamu ya</string>
+    <string name="title_login_page">Sign In</string>
+    <string name="name">Nama</string>
+    <string name="message_main_page">Keluar Akun.</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="logout">Keluar</string>
+    <string name="user">Username</string>
+    <string name="nama_aplikasi">Klapa\n</string>
+    <string name="akun">Already have Account? </string>
+    <string name="daftar"> Already have Account?  </string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+</resources>
