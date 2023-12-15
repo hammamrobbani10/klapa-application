@@ -17,4 +17,5 @@
     <string name="daftar"> Already have Account?  </string>
     <string name="sign_up">Sign Up</string>
     <string name="sign_in">Sign In</string>
+    <string name="mau_cari_apa">Search</string>
 </resources>

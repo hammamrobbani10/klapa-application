@@ -15,6 +15,8 @@ import com.example.klapa.ViewModelFactory
 import com.example.klapa.view.main.MainActivity
 import com.example.klapa.data.pref.UserModel
 import com.example.klapa.databinding.ActivityLoginBinding
+import com.example.klapa.view.home.HomeActivity
+
 import com.example.klapa.view.signup.SignUpActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -59,7 +61,7 @@ class LoginActivity : AppCompatActivity() {
                 setTitle("Yeah")
                 setMessage("Anda Berhasil Login")
                 setPositiveButton("Lanjut"){_, _ ->
-                    val intent = Intent(context, MainActivity::class.java)
+                    val intent = Intent(context, HomeActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent)
                     finish()
