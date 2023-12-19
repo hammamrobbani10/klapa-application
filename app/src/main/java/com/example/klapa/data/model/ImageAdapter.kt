@@ -26,7 +26,7 @@ class GambarAdapter(private val gambarList: List<GambarModel>) : RecyclerView.Ad
         Glide.with(holder.itemView.context)
             .load(gambar.drawableResId) // Menggunakan ID drawable dari GambarModel
             .centerCrop()
-            .override(600, 650) // Mengatur ukuran gambar yang di-load
+            .override(600, 600) // Mengatur ukuran gambar yang di-load
             .into(holder.imageView)
     }
 
