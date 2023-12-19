@@ -1,8 +1,10 @@
 package com.example.klapa.data.model
 
+import BarangModel
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -22,6 +24,8 @@ class BarangAdapter(private val barangList: List<BarangModel>) : RecyclerView.Ad
         val imageView: ImageView = itemView.findViewById(R.id.imageView)
         val namaTextView: TextView = itemView.findViewById(R.id.namaTextView)
         val hargaTextView: TextView = itemView.findViewById(R.id.hargaTextView)
+        val alamatTextView: TextView = itemView.findViewById(R.id.alamatTextView)
+        val buttonLiatProduct: Button = itemView.findViewById(R.id.buttonLiatProduct)
 
         init {
             itemView.setOnClickListener {
@@ -32,6 +36,7 @@ class BarangAdapter(private val barangList: List<BarangModel>) : RecyclerView.Ad
             }
         }
     }
+
 
     fun setOnItemClickListener(listener: OnItemClickListener) {
         onItemClickListener = listener
@@ -54,6 +59,7 @@ class BarangAdapter(private val barangList: List<BarangModel>) : RecyclerView.Ad
 
         holder.namaTextView.text = barang.nama
         holder.hargaTextView.text = "Rp ${barang.harga}"
+        holder.alamatTextView.text = barang.alamat
     }
 
     override fun getItemCount(): Int {

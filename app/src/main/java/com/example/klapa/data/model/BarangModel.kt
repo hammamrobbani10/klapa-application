@@ -1,5 +1,3 @@
-package com.example.klapa.data.model
-
 import android.os.Parcel
 import android.os.Parcelable
 
@@ -12,13 +10,15 @@ class BarangModel(
     val pesanan: String,
     val kategori: String,
     val detail: String,
-    val deskripsi: String
+    val deskripsi: String,
+    val alamat: String
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString() ?: "",
         parcel.readInt(),
         parcel.readInt(),
+        parcel.readString() ?: "",
         parcel.readString() ?: "",
         parcel.readString() ?: "",
         parcel.readString() ?: "",
@@ -36,35 +36,20 @@ class BarangModel(
         parcel.writeString(kategori)
         parcel.writeString(detail)
         parcel.writeString(deskripsi)
+        parcel.writeString(alamat)
     }
 
     override fun describeContents(): Int {
         return 0
     }
 
-    // Fungsi-fungsi untuk format kondisi, pemesanan, dan kategori
-    fun formatKondisi(): String {
-        return "Kondisi\t\t\t\t\t\t\t\t\t$kondisi"
-    }
-
-    fun formatPemesanan(): String {
-        return "Pemesanan\t\t\t\t$pesanan"
-    }
-
-    fun formatKategori(): String {
-        return "Kategori\t\t\t\t\t\t\t\t$kategori"
-    }
-
+    // Fungsi untuk mengambil detail produk dengan format yang sesuai
     fun formatDetailProduk(): String {
-        return "Detail produk:\n" +
-                "${formatKondisi()}\n" +
-                "${formatPemesanan()}\n" +
-                "${formatKategori()}"
-    }
-
-
-    fun formatDeskripsiProduk(): String {
-        return "Deskripsi Produk:\n$deskripsi"
+        return "Kondisi: $kondisi\n" +
+                "Pesanan: $pesanan\n" +
+                "Kategori: $kategori\n" +
+                "Detail: $detail\n" +
+                "Alamat: $alamat"
     }
 
     companion object CREATOR : Parcelable.Creator<BarangModel> {

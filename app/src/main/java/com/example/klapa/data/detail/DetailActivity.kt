@@ -1,12 +1,13 @@
 package com.example.klapa.data.detail
 
 
+import BarangModel
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.klapa.R
-import com.example.klapa.data.model.BarangModel
+
 
 
 class DetailActivity : AppCompatActivity() {

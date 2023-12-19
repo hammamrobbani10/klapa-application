@@ -1,6 +1,7 @@
 package com.example.klapa.view.home
 
 
+import BarangModel
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
@@ -13,7 +14,6 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.klapa.R
 import com.example.klapa.data.detail.DetailActivity
 import com.example.klapa.data.model.BarangAdapter
-import com.example.klapa.data.model.BarangModel
 import com.example.klapa.data.model.GambarAdapter
 import com.example.klapa.data.model.GambarModel
 
@@ -55,7 +55,8 @@ class HomeActivity : AppCompatActivity() {
                 "1 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan."
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             ),
             BarangModel(
                 R.drawable.barang2,
@@ -66,7 +67,8 @@ class HomeActivity : AppCompatActivity() {
                 "2 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi Produk Barang 2"
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             ),
             BarangModel(
                 R.drawable.barang3,
@@ -77,7 +79,8 @@ class HomeActivity : AppCompatActivity() {
                 "1 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi Produk Barang 3."
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             ),
             BarangModel(
                 R.drawable.barang4,
@@ -88,7 +91,8 @@ class HomeActivity : AppCompatActivity() {
                 "1 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi Produk Barang 4"
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             ),
             BarangModel(
                 R.drawable.barang5,
@@ -99,7 +103,8 @@ class HomeActivity : AppCompatActivity() {
                 "1 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi Produk Barang 5"
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             ),
             BarangModel(
                 R.drawable.barang6,
@@ -110,7 +115,8 @@ class HomeActivity : AppCompatActivity() {
                 "1 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi Produk Barang 6"
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             ),
             BarangModel(
                 R.drawable.barang7,
@@ -121,7 +127,8 @@ class HomeActivity : AppCompatActivity() {
                 "1 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi Produk Barang 7"
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             ),
             BarangModel(
                 R.drawable.barang8,
@@ -132,7 +139,8 @@ class HomeActivity : AppCompatActivity() {
                 "1 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi Produk Barang 8"
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             ),
             BarangModel(
                 R.drawable.barang9,
@@ -143,7 +151,8 @@ class HomeActivity : AppCompatActivity() {
                 "1 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi Produk Barang 9"
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             ),
             BarangModel(
                 R.drawable.barang10,
@@ -154,7 +163,8 @@ class HomeActivity : AppCompatActivity() {
                 "1 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi Produk Barang 10"
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             ),
             BarangModel(
                 R.drawable.barang11,
@@ -165,7 +175,8 @@ class HomeActivity : AppCompatActivity() {
                 "1 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi Produk Barang 11"
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             ),
             BarangModel(
                 R.drawable.barang12,
@@ -176,7 +187,8 @@ class HomeActivity : AppCompatActivity() {
                 "1 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi Produk Barang 12"
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             ),
             BarangModel(
                 R.drawable.barang13,
@@ -187,7 +199,8 @@ class HomeActivity : AppCompatActivity() {
                 "1 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi Produk Barang 13"
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             ),
             BarangModel(
                 R.drawable.barang14,
@@ -198,7 +211,8 @@ class HomeActivity : AppCompatActivity() {
                 "1 Buah",
                 "Bibit",
                 "Detail Product",
-                "Deskripsi Produk Barang 14"
+                "Deskripsi:\n\nKelapa adalah buah dari pohon kelapa (Cocos nucifera).\nBuah kelapa digunakan sebagai minuman, sari/santan, minyak, dan dagingnya yang lezat juga dikonsumsi.\n\nKelapa atau nyiur adalah anggota tunggal dalam genus Cocos dari suku aren-arenan atau Arecaceae.\nArti kata kelapa dapat merujuk pada keseluruhan pohon kelapa, biji, atau buah, yang secara botani adalah pohon berbuah, bukan pohon kacang-kacangan.",
+                "Alamat barang di sini"
             )
             // Tambahkan barang sesuai kebutuhan
         )
