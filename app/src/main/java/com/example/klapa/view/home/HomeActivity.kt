@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.EditText
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,6 +17,7 @@ import com.example.klapa.R
 import com.example.klapa.data.detail.DetailActivity
 import com.example.klapa.data.model.GambarAdapter
 import com.example.klapa.data.model.GambarModel
+import com.example.klapa.profile.ProfilePageActivity
 
 class HomeActivity : AppCompatActivity() {
 
@@ -238,5 +240,10 @@ class HomeActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         })
+        val personButton: ImageButton = findViewById(R.id.personButton)
+        personButton.setOnClickListener {
+            val intent = Intent(this, ProfilePageActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
