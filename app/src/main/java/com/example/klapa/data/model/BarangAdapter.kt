@@ -1,6 +1,4 @@
-package com.example.klapa.data.model
-
-import BarangModel
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,10 +9,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.klapa.R
 
-class BarangAdapter(private val barangList: List<BarangModel>) : RecyclerView.Adapter<BarangAdapter.BarangViewHolder>() {
+
+class BarangAdapter(
+    private val barangList: List<BarangModel>,
+    private var onItemClickListener: OnItemClickListener? = null
+) : RecyclerView.Adapter<BarangAdapter.BarangViewHolder>() {
 
     private var filteredList: List<BarangModel> = barangList
-    private var onItemClickListener: OnItemClickListener? = null
 
     interface OnItemClickListener {
         fun onItemClick(barang: BarangModel)
@@ -28,7 +29,8 @@ class BarangAdapter(private val barangList: List<BarangModel>) : RecyclerView.Ad
         val buttonLiatProduct: Button = itemView.findViewById(R.id.buttonLiatProduct)
 
         init {
-            itemView.setOnClickListener {
+            // Set onClickListener untuk button
+            buttonLiatProduct.setOnClickListener {
                 val position = adapterPosition
                 if (position != RecyclerView.NO_POSITION) {
                     onItemClickListener?.onItemClick(filteredList[position])
@@ -36,7 +38,6 @@ class BarangAdapter(private val barangList: List<BarangModel>) : RecyclerView.Ad
             }
         }
     }
-
 
     fun setOnItemClickListener(listener: OnItemClickListener) {
         onItemClickListener = listener

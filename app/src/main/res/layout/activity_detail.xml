@@ -1,114 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".data.detail.DetailActivity"
+    android:fillViewport="true"
     android:layout_marginTop="10dp">
 
-    <ImageButton
-        android:id="@+id/backButton"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:src="@drawable/baseline_arrow_back_24"
-        android:background="@android:color/transparent"/>
-
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageViewDetail"
-        tools:src="@tools:sample/avatars" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/namaProduk"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewDetail"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginTop="30dp"/>
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:background="@android:color/transparent"/>
 
-    <TextView
-        android:id="@+id/hargaProduk"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/namaProduk"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="27dp"
-        />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewDetail"
+            tools:src="@tools:sample/avatars" />
 
-    <TextView
-        android:id="@+id/diskonProduk"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/hargaProduk"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="27dp"/>
+        <TextView
+            android:id="@+id/namaProduk"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginTop="30dp"/>
 
-    <TextView
-        android:id="@+id/detailProduk"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="1dp"
-        android:gravity="top"
-        android:hint="Detail Produk"
-        android:padding="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diskonProduk"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp" />
+        <TextView
+            android:id="@+id/hargaProduk"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"/>
 
-    <TextView
-        android:id="@+id/deskripsiProduk"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:gravity="top"
-        android:hint="Deskripsi Produk"
-        android:padding="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailProduk"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="5dp"
-        />
+        <TextView
+            android:id="@+id/diskonProduk"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"/>
 
+        <TextView
+            android:id="@+id/detailProduk"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="1dp"
+            android:gravity="top"
+            android:hint="Detail Produk"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
 
-    <ImageButton
-        android:id="@+id/messageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/deskripsiProduk"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginLeft="50dp"
-        android:src="@drawable/baseline_message_24"
-        android:background="@android:color/transparent"/>
+        <TextView
+            android:id="@+id/deskripsiProduk"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="top"
+            android:hint="Deskripsi Produk"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"/>
 
-    <Button
-        android:id="@+id/beliLangsungButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/deskripsiProduk"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginLeft="115dp"
-        android:text="Beli Langsung"
-        android:layout_marginTop="9dp"
-        android:background="@drawable/rounded_button"/>
+        <ImageButton
+            android:id="@+id/messageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/baseline_message_24"
+            android:background="@android:color/transparent"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/deskripsiProduk"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginLeft="280dp"
-        android:layout_marginTop="9dp"
-        android:text="+Keranjang"
-        android:background="@drawable/rounded_black_button" />
+        <Button
+            android:id="@+id/beliLangsungButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:text="Beli Langsung"
+            android:layout_marginTop="-37dp"
+            android:background="@drawable/rounded_button" />
 
+        <Button
+            android:id="@+id/keranjangButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="-47dp"
+            android:text="+Keranjang"
+            android:background="@drawable/rounded_black_button" />
 
+    </LinearLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

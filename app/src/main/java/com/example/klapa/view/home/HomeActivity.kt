@@ -1,6 +1,7 @@
 package com.example.klapa.view.home
 
 
+import BarangAdapter
 import BarangModel
 import android.content.Intent
 import android.os.Bundle
@@ -13,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.example.klapa.R
 import com.example.klapa.data.detail.DetailActivity
-import com.example.klapa.data.model.BarangAdapter
 import com.example.klapa.data.model.GambarAdapter
 import com.example.klapa.data.model.GambarModel
 
@@ -231,10 +231,8 @@ class HomeActivity : AppCompatActivity() {
             override fun afterTextChanged(editable: Editable?) {}
         })
 
-        // Menangani klik pada setiap elemen di RecyclerView
         barangAdapter.setOnItemClickListener(object : BarangAdapter.OnItemClickListener {
             override fun onItemClick(barang: BarangModel) {
-                // Buka DetailActivity dan kirim data barang
                 val intent = Intent(this@HomeActivity, DetailActivity::class.java)
                 intent.putExtra("barang", barang)
                 startActivity(intent)

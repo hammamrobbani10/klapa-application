@@ -1,14 +1,14 @@
 package com.example.klapa.data.detail
 
-
-import BarangModel
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.klapa.R
-
-
+import BarangModel
+import android.widget.ImageButton
+import com.example.klapa.data.chatbot.ChatBotActivity
 
 class DetailActivity : AppCompatActivity() {
 
@@ -22,6 +22,8 @@ class DetailActivity : AppCompatActivity() {
         val diskonProduk: TextView = findViewById(R.id.diskonProduk)
         val detailProduk: TextView = findViewById(R.id.detailProduk)
         val deskripsiProduk: TextView = findViewById(R.id.deskripsiProduk)
+        val backButton: ImageView = findViewById(R.id.backButton)
+        val messageButton: ImageButton = findViewById(R.id.messageButton)
 
         // Terima data barang dari intent
         val barangModel: BarangModel? = intent.getParcelableExtra("barang")
@@ -34,14 +36,23 @@ class DetailActivity : AppCompatActivity() {
             diskonProduk.text = "Diskon: ${barangModel.diskon}%"
 
             // Mengatur detail produk dengan multiline text
-            // Mengatur detail produk dengan multiline text
-            val detailText = barangModel?.formatDetailProduk() ?: ""
+            val detailText = "${barangModel.kondisi}\n${barangModel.pesanan}\n${barangModel.kategori}\n${barangModel.detail}"
             detailProduk.text = detailText
-
 
             // Mengatur deskripsi produk dengan multiline text
             deskripsiProduk.text = barangModel.deskripsi
         }
 
+        // Menangani klik tombol back
+        backButton.setOnClickListener {
+            onBackPressed()
+        }
+
+        // Menangani klik tombol pesan
+        messageButton.setOnClickListener {
+            // Membuat Intent untuk memulai ChatBotActivity
+            val intent = Intent(this, ChatBotActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
