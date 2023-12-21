@@ -36,7 +36,10 @@ class DetailActivity : AppCompatActivity() {
             diskonProduk.text = "Diskon: ${barangModel.diskon}%"
 
             // Mengatur detail produk dengan multiline text
-            val detailText = "${barangModel.kondisi}\n${barangModel.pesanan}\n${barangModel.kategori}\n${barangModel.detail}"
+            val detailText = "Detail Product\n\n" +
+                    "Kondisi: ${barangModel.kondisi}\n" +
+                    "Min.Pemesanan: ${barangModel.pesanan}\n" +
+                    "Kategori: ${barangModel.kategori}"
             detailProduk.text = detailText
 
             // Mengatur deskripsi produk dengan multiline text

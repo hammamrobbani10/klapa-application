@@ -1,55 +1,29 @@
-package com.example.klapa.view.home
-
+// ProductActivity.kt
+package com.example.klapa.product
 
 import BarangAdapter
 import BarangModel
 import android.content.Intent
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.widget.EditText
-import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.widget.ViewPager2
 import com.example.klapa.R
-import com.example.klapa.account.AccountActivity
 import com.example.klapa.data.detail.DetailActivity
-import com.example.klapa.data.model.GambarAdapter
-import com.example.klapa.data.model.GambarModel
-import com.example.klapa.product.ProductActivity
-import com.example.klapa.profile.ProfilePageActivity
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class HomeActivity : AppCompatActivity() {
 
-    private lateinit var viewPager: ViewPager2
+class ProductActivity : AppCompatActivity() {
+
     private lateinit var recyclerView: RecyclerView
-    private lateinit var etQuery: EditText
     private lateinit var barangAdapter: BarangAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_product)
 
-        viewPager = findViewById(R.id.viewPager)
-        recyclerView = findViewById(R.id.recyclerView)
-        etQuery = findViewById(R.id.et_query)
+        recyclerView = findViewById(R.id.recyclerViewProduct)
 
-        val gambarList = listOf(
-            GambarModel(R.drawable.gambar1),
-            GambarModel(R.drawable.gambar2),
-            GambarModel(R.drawable.gambar3),
-            GambarModel(R.drawable.gambar4),
-            GambarModel(R.drawable.gambar5),
-            GambarModel(R.drawable.gambar6)
-            // Tambahkan gambar sesuai kebutuhan
-        )
-
-        val gambarAdapter = GambarAdapter(gambarList)
-        viewPager.adapter = gambarAdapter
-
+        // Isi dengan data barang sesuai kebutuhan ProductActivity
         val barangList = listOf(
             BarangModel(
                 R.drawable.barang1,
@@ -226,50 +200,13 @@ class HomeActivity : AppCompatActivity() {
         recyclerView.adapter = barangAdapter
         recyclerView.layoutManager = GridLayoutManager(this, 2)
 
-        etQuery.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(charSequence: CharSequence?, start: Int, count: Int, after: Int) {}
-
-            override fun onTextChanged(charSequence: CharSequence?, start: Int, before: Int, count: Int) {
-                barangAdapter.filter(charSequence.toString())
-            }
-
-            override fun afterTextChanged(editable: Editable?) {}
-        })
-
         barangAdapter.setOnItemClickListener(object : BarangAdapter.OnItemClickListener {
             override fun onItemClick(barang: BarangModel) {
-                val intent = Intent(this@HomeActivity, DetailActivity::class.java)
+                // Tambahkan logika untuk membuka DetailActivity dengan data produk yang sesuai
+                val intent = Intent(this@ProductActivity, DetailActivity::class.java)
                 intent.putExtra("barang", barang)
                 startActivity(intent)
             }
         })
-
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-
-        bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.home -> {
-                    true
-                }
-                R.id.product -> {
-                    val intent = Intent(this, ProductActivity::class.java)
-                    startActivity(intent)
-                    true
-                }
-                R.id.account -> {
-                    startActivity(Intent(this, AccountActivity::class.java))
-                    true
-                }
-                else -> false
-            }
-        }
-
-        val personButton: ImageButton = findViewById(R.id.personButton)
-        personButton.setOnClickListener {
-            val intent = Intent(this, ProfilePageActivity::class.java)
-            startActivity(intent)
-        }
-
-
     }
 }

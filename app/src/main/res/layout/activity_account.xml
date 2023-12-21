@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.AccountActivity">
+
+    <ImageButton
+        android:id="@+id/backButtonAccount"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/accountProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="-500dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/accountUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="30sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/accountProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="-590dp"/>
+    <TextView
+        android:id="@+id/nomorTelepon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0832 - XXXX - XXXX"
+        android:textSize="15sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/accountProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="-490dp"/>
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="muamarxxxxxx@gmail.com"
+        android:textSize="15sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/accountProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="-410dp"/>
+
+    <ImageView
+        android:id="@+id/alamatImage"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:src="@drawable/home_account"
+        app:layout_constraintTop_toBottomOf="@id/emailText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/daftarAlamatTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/emailText"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:text="Daftar Alamat"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/pengirimanAlamatTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/daftarAlamatTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:text="Atur Alamat Pengiriman Perbelanjaan"
+        android:textSize="10sp"/>
+
+    <ImageView
+        android:id="@+id/uangImage"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_attach_money_24"
+        app:layout_constraintTop_toBottomOf="@id/alamatImage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/rekeningBankTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pengirimanAlamatTextView"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:text="Rekening Bank"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tarikSaldoTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rekeningBankTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:text="Tarik Saldo Rekening Klapa Ke Saldo Tujuan"
+        android:textSize="10sp"/>
+
+    <ImageView
+        android:id="@+id/pembayaranInstanImage"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_wallet_24"
+        app:layout_constraintTop_toBottomOf="@id/uangImage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/pembayaranInstanTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tarikSaldoTextView"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:text="Pembayaran Instan"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/instanPembayaranTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pembayaranInstanTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:text="E-Wallet, Kartu Kredit dan Debit instan terdaftar"
+        android:textSize="10sp"/>
+
+    <ImageView
+        android:id="@+id/keamananImage"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_lock"
+        app:layout_constraintTop_toBottomOf="@id/pembayaranInstanImage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/keamananAkunTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/instanPembayaranTextView"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:text="Keamanan Akun"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/passwordAkunTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/keamananAkunTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:text="Kata sandi, PIN dan Verifikasi data diri"
+        android:textSize="10sp"/>
+
+    <ImageView
+        android:id="@+id/notifikasiImage"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_add_alert_24"
+        app:layout_constraintTop_toBottomOf="@id/keamananImage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/notifikasiTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/passwordAkunTextView"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:text="Notifikasi"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/notifikasiAplikasiTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/notifikasiTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:text="Atur segala jenis pesan notifikasi"
+        android:textSize="10sp"/>
+
+    <ImageView
+        android:id="@+id/akunImage"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_attachment_24"
+        app:layout_constraintTop_toBottomOf="@id/notifikasiImage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/akunTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/notifikasiAplikasiTextView"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:text="Atur akun yang tersambung "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/akunAplikasiTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/akunTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:text="Atur akun yang tersambung ke Klapa"
+        android:textSize="10sp"/>
+
+    <ImageView
+        android:id="@+id/logOutImage"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_directions_24"
+        app:layout_constraintTop_toBottomOf="@id/akunImage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/logOutTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/akunAplikasiTextView"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:text="Keluar Akun"
+        android:textStyle="bold"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
