@@ -41,19 +41,12 @@ class DetailActivity : AppCompatActivity() {
                     "Min.Pemesanan: ${barangModel.pesanan}\n" +
                     "Kategori: ${barangModel.kategori}"
             detailProduk.text = detailText
-
-            // Mengatur deskripsi produk dengan multiline text
             deskripsiProduk.text = barangModel.deskripsi
         }
-
-        // Menangani klik tombol back
         backButton.setOnClickListener {
             onBackPressed()
         }
-
-        // Menangani klik tombol pesan
         messageButton.setOnClickListener {
-            // Membuat Intent untuk memulai ChatBotActivity
             val intent = Intent(this, ChatBotActivity::class.java)
             startActivity(intent)
         }
